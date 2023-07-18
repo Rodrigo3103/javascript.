@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+body {
+    background-image:linear-gradient(to right ,rgb(93, 129, 202), rgb(77, 106, 180), rgb(55, 88, 172),
+     rgb(33, 63, 139));
+    color: white;
+}
+
+.Clock {
+    text-align: center;
+    vertical-align: middle;
+    position: fixed;
+    left: 45%;
+    top:40%;
+    transform: translate(-30%,-50%);
+    margin: auto;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aqua;
+}

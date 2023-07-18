@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 004</title>
+    <link rel="stylesheet" href="../aula06/estilos/style.css">
+</head>
+
+<body>
+    <h1>Exercício 004 da aula 06</h1>
+
+    <script>
+        var nome = window.prompt('qual é seu nome')
+        document.write(`O nome ${nome} tem ${nome.length} letras <br>`) // escreve na tela
+
+        document.writeln(`O nome ${nome} em letras maiúsculas ${nome.toUpperCase()} <br>`) // writeln quebra a linha
+        // o camando toUpperCase() = transforma o a palavra em maiúsculo
+        document.writeln(`O nome ${nome} em letras minúsculas ${nome.toLowerCase()}<br>`)
+        //--------------------- formatando numeros --------------------------------------
+        n1 = 1550.4563
+        document.writeln(`O numero sem formato é ${n1} <br>`)
+        document.writeln(`O Numero no formato de duas casa ${n1.toFixed(2)} <br>`)
+        document.writeln(`O formato com vírgula ${n1.toFixed(2).replace('.', ',')} <br>seiya`)
+        document.writeln(`O Numero em formato Real é ${n1.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })} <br>`)
+        document.writeln(`${n1.toLocaleString('usd', { style: 'arial', currency: 'USD' })} em Dólar <br>`)
+        document.writeln(`${n1.toLocaleString('eur', { style: 'currency', currency: 'EUR' })} em Euros <br>`)
+        document.writeln(`${n1.toLocaleString('jpy', { style: 'currency', currency: 'JPY' })} em Ienes <br>`)
+        document.writeln(`${n1.toLocaleString('gbp', { style: 'currency', currency: 'GBP' })} em Libra <br>`)
+                /*
+        operadores de indentidade restrita
+        exemplo 5 ==5 = True
+        5=='5' = True
+        5==='5' = False, ou seja pro java no caso de identidade restrita 3 sinais vai dar diferença. 
+
+        Procedência (), **, /   1º lugar 
+                >, <, >=    2º lugar
+                ! diferente 3º lugar
+                && E        4º lugar
+                || OU       5º lugar
+        operadores ternários
+        Trunks
+                ?:
+        
+        */
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(61, 118, 192);
+            color:white;
+            font-family: arial;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>aqui vai o resultado.</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javascript.</p>
+    <div id="msg">click em mim</div>
+        <p class="msg2"> clique novamente</p>
+
+    <script>
+        /*Selecionando documentos por Nome*/
+        var corpo = window.document.body // criar um seletor para selecionar onde precisamos mexer
+        var p1 = window.document.getElementsByTagName('p')[0] // manipulamo 
+        window.document.write(p1.innerText)
+        p1.style.color = 'navy'
+        //corpo.style.background = 'black'// muda a cor de fundo da tela
+        
+        /*Selecionando documentos por ID*/
+        /*
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'estou aguardando'
+        d.style.fontFamily = 'monospace'
+        */
+       /*Selecionando documentos por Classe*/
+       /*
+       var d = window.document.getElementsByClassName('msg2')[0]
+       d.style.background = 'red'
+       */
+
+       /*/*Selecionando documentos por Seletor*/
+
+       var d = window.document.querySelector('div#msg')
+       d.style.background = 'green'
+
+       var e = window.document.querySelector('.msg2')
+       e.innerHTML = 'teste teste'
+       e.style.background = 'blue'
+       
+
+
+    </script>
+    
+    
+
+    
+</body>
+</html>

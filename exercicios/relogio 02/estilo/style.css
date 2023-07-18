@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(3, 1, 22), rgb(14, 13, 65), rgb(36, 46, 90));
+    color: white;
+    text-align: center;
+    
+}
+header.container {
+    background-color:rgba(36, 46, 90, 0.39) ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.container P {
+    text-decoration: none;
+    color: white;
+}
+
+.logotipo {
+    cursor: pointer;
+    font-size: larger;
+}
+
+.container p:hover {
+    color:antiquewhite ;
+    font-size: 20px ;
+    filter: drop-shadow(1px 1px 20px rgba(255, 253, 253, 0.534));
+    cursor: pointer;
+}
+
+div#fotografia {
+    background-color: rgb(6, 80, 4);
+    border-radius: 10px;
+}
+section {
+    margin: auto;
+    background-color: white;
+    max-width: 800px;
+    height: 650px;
+    border-radius: 10px;
+   background-color: lightblue;
+}
+
+#foto {
+    max-width: 250px;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    vertical-align: bottom;
+    top: 25px;
+    
+}
+
+img {
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 15%;
+}
+
+#relogio {
+    margin: auto;
+    width: 250px;
+    color: rgba(5, 61, 40, 0.568);
+    text-shadow: 1px 1px 10px rgba(11, 143, 55, 0.247);
+    text-overflow: ellipsis;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    top: 80%;
+    font-size: larger;
+    font-size: 25px;
+    display: block;
+    
+
+    
+}
+
+
+
+

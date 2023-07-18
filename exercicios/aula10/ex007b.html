@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: 20pt arial;
+            background-color: rgb(35, 11, 75);
+            color: white;
+            width: 500px;
+            height: 100vh;
+            text-align: center;
+            margin: auto;
+            
+            
+
+        }
+
+        section {
+            display: block;
+            text-align: center;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 20px;
+            height: auto;
+            
+        }
+        #iresultado{
+            color:rgb(171, 161, 196)
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Somando dois Valores</h1>
+    <section>
+        <p>
+            <label for="itxtn1">Numero 01</label>
+            <input type="number" name="itxtn1" id="itxtn1">
+        </p>
+        <p>
+            <label for="itxtn2">Numero 02</label>
+            <input type="number" name="itxtn2" id="itxtn2">
+        </p>
+        <p>
+            <input type="button" value="somar" onclick="somar()">
+            <input type="button" value="limpar" onclick="limpar()">
+        </p>
+        <div id="iresultado">o Resultado é:</div>
+    </section>
+
+
+    <script>
+        function somar() {
+            var txt1 = document.getElementById('itxtn1')
+            var txt2 = document.getElementById('itxtn2')
+            var res = document.getElementById('iresultado')
+            var n1 = Number(txt1.value)
+            var n2 = Number(txt2.value)
+            var s = n1 + n2
+            
+            res.innerHTML =`o Resultado é: ${n1} + ${n2} é <strong>${s}</strong>`
+            
+            
+        }
+
+        function limpar () {
+          var lim1 = document.getElementById('itxtn1')
+          var lim2 = document.getElementById('itxtn2')
+          
+          
+          
+         
+          
+          
+          
+
+          
+        }
+
+    </script>
+
+
+</body>
+</html>

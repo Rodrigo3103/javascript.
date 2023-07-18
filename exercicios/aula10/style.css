@@ -1,0 +1,43 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(88, 88, 240),rgb(157, 157, 224),rgb(88, 88, 240) );
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    border: 1px solid blue;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    width: 500px
+}
+
+.moldura {
+    
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+    background-color: rgba(137, 43, 226, 0.13);
+    height: 80vh;
+    width: auto;
+    position: relative;
+}
+
+.dados {
+    
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 0, 0.062);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}

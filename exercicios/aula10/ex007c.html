@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 07</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Somando dois numeros V3.0</h1>
+
+    
+            <div class="moldura">
+                <div class="dados">
+                    <p>
+                        <label for="in1">Digite o Primeiro Número</label>
+                        <input type="number" name="nu1" id="in1">
+                    </p>
+                    <p style="margin-left: 250px;">+</p>
+                    <p>
+                        <label for="in2">Digite o Segundo Número</label>
+                        <input type="number" name="nu2" id="in2">
+                    </p>
+                    <p>
+                        <input type="button" value="somar" onclick="somar()">
+                    </p>
+                    <div id="iresultado">Resultado </div>
+                </div>
+            </div>
+
+
+    <script id="soma">
+        function somar() {
+            var numeroN1 = document.getElementById('in1')
+            var numeroN2 = document.getElementById('in2')
+            var somarNu = document.getElementById('iresultado')
+
+            var N1 = Number(numeroN1.value)
+            var N2 = Number(numeroN2.value)
+            var soma = N1 + N2
+
+            somarNu.innerHTML = `O resultado da conta de ${N1} + ${N2} = <strong>${soma}</strong> `
+        }
+
+        
+    </script>
+
+    
+</body>
+</html>

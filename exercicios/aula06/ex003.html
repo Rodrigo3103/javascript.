@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Aula 06</title>
+</head>
+<body>
+    <h1>Armazenando dados em uma variavel</h1>
+
+    <h2>exercício 03</h2>
+
+    <h2>Ola mundo</h2>
+
+    <p>já me livrei da maldição</p>
+
+  
+
+    <script>
+        var n1 = window.prompt('Digite um Número');
+        var n2 = window.prompt('Digite outro Numero.');
+        var soma  =  Number(n1) + Number(n2);
+        var soma = window.alert ('o Resultado é: '+soma) // concatenação
+        //-------------------------------------------------------------------
+        // number +  number = number --- aqui é feito uma soma
+        // string + string = string  --- aqui é feito uma concatenação.
+        //-------------------------------------------------------------------
+        var teste = Number(n1) + String(n2) // nesse  caso aqui se deixar uma variavel string e outra inteira, o string prevalecerá.
+        /* outra maneira de se converter dados é */
+        //-------------------------------------------------------------------
+        var n3 = Number.parseInt(prompt('Digite mais um Número: '))
+        var n4 = Number.parseInt(prompt('Digite mais outro Número: '))
+        res = n3 +n4
+        window.alert('o Resultado é ' + res )
+        window.alert('aqui é uma função de string '+teste)
+        //-------------------------------------------------------------------
+        
+        /*Também podemos colocar o Number para deixar o identificador escolher se o Número é inteiro ou Real*/
+
+        var n5  = Number(window.prompt('Digite um numero'))
+        var n6  = Number(window.prompt('Digite outro Número:'))
+        res = n5 +n6
+        alert('O resultado vai ser ' + res)
+        // caso for preciso, podemos fazer com que o numero seja int com oo parInst ou float com o parFloat
+        //-------------------------------------------------------------------
+
+        /*-------------------usando o template string -------------------------------*/
+        /*
+        também podemos usar o interpretador de String's
+        usando crâses e $ {}
+        exemplo abaixo:
+        */
+        nome = 'Rodrigo'
+        idade = 32
+        nota = 5.5
+        window.alert(`O aluno ${nome} com ${idade} anos tirou a nota ${nota} na prova`)
+
+        nome = window.prompt('Digite seu nome: ')
+        idade = Number.parseInt(window.prompt('Digite sua idade: '))
+        nota = Number(prompt('Digite sua nota: '))
+
+        alert(`O aluno ${nome} com a idade de ${idade} anos tirou a nota ${nota}`)
+        var ola = window.document.getElementsByTagName('h2')[0]
+        ola.style.color = 'red'
+        ola.style.textDecoration = 'underline'
+        
+        
+        //-------------------------------------------------------------------
+
+        
+
+    </script>
+
+
+
+
+  
+
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+body {
+    display: block;
+    background: rgb(56, 56, 179);
+    font: normal 15pt arial;
+    color: white;
+
+}
+
+header {
+    color: white;
+    text-align: center;
+
+}
+
+header:hover {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.164);
+}
+
+section {
+    display: block;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: auto;
+    height: auto;
+    margin: auto;
+    color: rgb(7, 7, 7);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+
+
+
+img {
+
+    border-radius: 360cm;
+}
+
+div {
+
+    padding: 20px;
+    
+}
+
+#isel{
+    text-align: left;
+    margin: 20px;
+}
+
+#ibtn {
+    text-align: left;
+}
+#teste {
+    /*somente pra teste de cores e estilos*/
+    background-color: #385858;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+footer:hover {
+    text-shadow: 5px 5px 10px rgba(85, 80, 80, 0.24);
+    text-decoration: underline;
+    text-decoration-color: aquamarine;
+    
+
+}
+
+#relogio {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(103, 204, 170);
+    font-weight: bold;
+    text-align: center;
+}

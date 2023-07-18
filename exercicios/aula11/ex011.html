@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+
+
+
+    <div class="caixa">
+        
+            
+            <label for="inacionalidade">Digite sua Nacionalidade: </label>
+            <input type="text" name="inacionalidade" id="inacionalidade">
+            <input type="button" value="verificar" onclick="resultado()">
+            <input type="button" value="limpar" onclick="limpar()">
+            <div id="msg">
+                <p>O cidadão (a) é: </p>
+            </div>
+       
+        </div>
+
+    <script>
+        function resultado () {
+            var nome = window.document.getElementById('inacionalidade')
+            var res = window.document.getElementById('msg').getElementsByTagName('p')[0]
+            if(nome.value =='brasil' || nome.value=='Brasil') {
+                res.innerHTML += `Brasileiro!`
+            }
+            else {
+                res.innerHTML += `Estrangeiro!`
+            }
+
+
+        }  
+        function limpar() {
+            document.getElementById('inacionalidade').value=''; // Limpa o campo
+            var limpar = window.document.getElementById('msg').getElementsByTagName('p')[0]
+            limpar.innerHTML = 'O cidadão (a) é:';
+           
+            
+        }  
+    </script>
+
+</body>
+</html>

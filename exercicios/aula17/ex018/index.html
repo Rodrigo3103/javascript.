@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercício</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body onload="horasAtual()">
+
+    <header>
+        <h1>Título</h1>
+    </header>
+
+    <section>
+        
+        <div>
+           Número entre 1 e 100
+           <input type="number" name="fnum" id="fnum">
+           <input type="button" id="iadicionar" value="Adicionar" onclick="adicionar()">
+           <br>
+           <br>
+           <select name="flista" id="flista" size="6"></select>
+           <br>
+           <input type="button" id="ifinalizar" value="Finalizar" onclick="finalizar()">
+        </div>
+            
+        <div  id="res">
+            
+        </div>
+
+        <div id="relogio">Hora em tempo Real!</div>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; <a href="https://www.youtube.com/watch?v=slLoLLCd-k0&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=32" target="_blank">CursoEmVídeo</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
